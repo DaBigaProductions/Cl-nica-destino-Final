@@ -1,0 +1,147 @@
+/* -------------------css para los elementos del layout - header - nav - footer ----------------------*/
+*{
+    font-family:Arial;
+    padding:0;
+    margin:0;
+}
+#headerfinal ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+#headerfinal li {
+    padding: 10px; 
+}
+
+#headerfinal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #002c57;
+    border-bottom: solid 1px #679dd3;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    z-index: 90;
+    padding: 0 20px;
+}
+
+#headerfinal a{
+    text-decoration:none;
+    color:white;
+}
+#headerfinal h1{
+    color:white;
+    margin-left:10px;
+    flex-grow:1;
+}
+#navfinal{
+    background:#002c57;
+    border-right: solid 1px #679dd3;
+    position: fixed;
+    top:1.5em;
+    bottom:0px;
+    left:0px;
+    width: fit-content;
+    z-index:50;
+    display:block;
+    padding-top:5em;
+    text-align:left;
+}
+#navfinal ul{
+    list-style:none;
+    padding:0px;
+    margin:0px 20px;
+}
+#navfinal li{
+    max-width:100%;
+    background:#002c57;
+    border-radius:5px;
+    padding:10px 60px;
+    margin:0px;
+}
+#navfinal a{
+    text-decoration:none;
+    color:white;
+    margin:0px;
+    padding:10px 5px;
+    text-align:left;
+}
+#navfinal li:hover{
+    background:#2a5786;
+}
+#headerfinal li:hover{
+    background:#2a5786;
+    padding:10px;
+    border-radius:50px;
+}
+#logo{
+    width: 70px;
+}
+#navfinal svg{
+    width: 30px;
+    height: 30px;
+}
+.logofinal {
+    padding: 10px;
+}
+.footer-message {
+    font-size: 12px;
+    color: white;
+    text-align: center;
+    bottom: 0;
+    position: fixed;
+    padding: 10px;
+}
+#user-profile {
+    width: 50px;
+    border-radius: 100%;
+}
+
+.caja-perfil {
+    background: #002c57;
+    position: fixed;
+    z-index: 100;
+    padding: 20px;
+    color: white;
+    top: 4em;
+    right: 0px;
+    border-radius: 10px;
+    border: solid 1px #679dd3;
+    display: none;
+
+    /* Flexbox para centrar contenido */
+    flex-direction: column; /* Para alinear los elementos en columna */
+    align-items: center;    /* Centrado horizontal */
+    justify-content: center; /* Centrado vertical */
+}
+
+.caja-perfil img {
+    width: 100px;
+}
+
+.caja-perfil button {
+    background: #002c57;
+    border: solid 1px #679dd3;
+    border-radius: 4px;
+    color: #679dd3;
+    padding: 10px;
+}
+
+.caja-perfil button:hover {
+    background: #2a5786;
+    border: solid 1px #679dd3;
+    border-radius: 4px;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.caja-perfil * {
+    margin: 10px;
+}
+
